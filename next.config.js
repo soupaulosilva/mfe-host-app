@@ -20,9 +20,6 @@ module.exports = {
             }),
             'app-pages': createDelegatedModule(require.resolve('./remote-delegate.js'), {
               remote: `app-pages@http://localhost:3002/_next/static/${location}/remoteEntry.js`
-            }),
-            'remote-latam': createDelegatedModule(require.resolve('./remote-delegate.js'), {
-              remote: `remote-latam@http://localhost:3003/_next/static/${location}/remoteEntry.js`
             })
           }
         })
